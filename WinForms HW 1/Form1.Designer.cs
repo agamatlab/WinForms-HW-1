@@ -34,10 +34,11 @@
             // lbl_Moving
             // 
             this.lbl_Moving.AutoSize = true;
+            this.lbl_Moving.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lbl_Moving.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lbl_Moving.Location = new System.Drawing.Point(249, 173);
             this.lbl_Moving.Name = "lbl_Moving";
-            this.lbl_Moving.Size = new System.Drawing.Size(195, 41);
+            this.lbl_Moving.Size = new System.Drawing.Size(197, 43);
             this.lbl_Moving.TabIndex = 0;
             this.lbl_Moving.Text = "Moving Text";
             this.lbl_Moving.MouseHover += new System.EventHandler(this.lbl_Moving_MouseHover);
@@ -50,6 +51,7 @@
             this.Controls.Add(this.lbl_Moving);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseMove);
             this.ResumeLayout(false);
             this.PerformLayout();
 
