@@ -36,8 +36,9 @@
             // lbl_Time
             // 
             this.lbl_Time.AutoSize = true;
+            this.lbl_Time.BackColor = System.Drawing.Color.Transparent;
             this.lbl_Time.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbl_Time.Location = new System.Drawing.Point(302, 54);
+            this.lbl_Time.Location = new System.Drawing.Point(293, 54);
             this.lbl_Time.Name = "lbl_Time";
             this.lbl_Time.Size = new System.Drawing.Size(135, 54);
             this.lbl_Time.TabIndex = 0;

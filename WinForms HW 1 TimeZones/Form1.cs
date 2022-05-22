@@ -43,7 +43,10 @@ namespace WinForms_HW_1_TimeZones
         }
 
         private void Timer_Tick(object? sender, EventArgs e)
-            => lbl_Time.Text = CurrentTimeZone.AddSeconds(1).ToLongTimeString();
+        {
+            CurrentTimeZone = CurrentTimeZone.AddSeconds(1);
+            lbl_Time.Text = CurrentTimeZone.ToLongTimeString();
+        }
 
         private void btn_London_Click(object sender, EventArgs e)
             => ChangeDesign(Choices.London);
